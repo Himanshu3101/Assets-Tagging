@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccentBlue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/updateIpadd"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialogbackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/enterIpadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/IPaddress"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/ipadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterIpadd"
+            android:background="@drawable/edittext_background_not_round_blue"
+            android:hint="@string/enterIPaddress"
+            android:inputType="textUri"
+            android:maxLength="15"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/enterPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ipadd"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/port"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/editPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterPort"
+            android:background="@drawable/edittext_background_not_round_blue"
+            android:hint="@string/enter_user_port"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12dp" />
+
+        <com.assettagging.test.view.custom_control.Custom_Button
+            android:id="@+id/updateIp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_below="@+id/editPort"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background_blue"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/updateIpadd"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!--android:onClick=""-->
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.assettagging.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/test_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/test_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity
+            android:name=".view.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.schedule_detail.ScheduleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.locationwise.LocationWiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.taskLocationWise.TaskWiseActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".controller.CheckInternetConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".controller.NetworkHandleService" />
+
+        <activity
+            android:name=".view.navigation.NavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.AddAssetLocation.BindLocationDisposalActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="08dcd62cb7d57e5aa3bac307a08155ef3171c2bf" />
+
+        <activity
+            android:name=".view.assetdisposer.existing.AddAssetDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Dashboard"
+            android:icon="@mipmap/dashboard_icon"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_Schedules"
+            android:icon="@mipmap/tagging"
+            android:title="@string/daily_schedule" />
+        <item
+            android:id="@+id/nav_disposer"
+            android:icon="@mipmap/disposer"
+            android:title="@string/assetDisposer" />
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@mipmap/theme"
+            android:visible="false"
+            android:title="@string/chanhge_theme" />
+        <item
+            android:id="@+id/tag_update"
+            android:icon="@mipmap/tag_update"
+            android:title="@string/tagupdate" />
+    </group>
+
+
+</menu>

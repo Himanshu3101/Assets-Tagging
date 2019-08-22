@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_LoadMore"
+        android:title="@string/loaddata"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout" />
+    <item
+        android:id="@+id/action_change_password"
+        android:title="@string/change_password" />
+
+    <item
+        android:id="@+id/action_add_new"
+        android:icon="@mipmap/add_new"
+        android:title="@string/addnew"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@mipmap/filter"
+        android:title="@string/filter"
+        app:showAsAction="always" />
+
+</menu>

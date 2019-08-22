@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBaseContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:text="@string/scanExistingTag"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/editTextBarCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background_not_round_blue"
+                    android:gravity="left"
+                    android:hint="@string/scan_qr_code"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/asset_id"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewAseetId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/asset_name"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewAssetName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="Location"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="Project Id"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewProjectId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/project_name"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewProjectName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/tagnumber"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/textViewBarcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutBaseContainer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="@string/scanNewTag"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/editTextUpdatedBarCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewtag"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background_not_round_blue"
+                android:gravity="left"
+                android:hint="@string/scan_new_qr_code"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <com.assettagging.test.view.custom_control.Custom_Button
+                android:id="@+id/customButtonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/editTextUpdatedBarCode"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_background_blue"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp"
+                android:text="@string/updateTag"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

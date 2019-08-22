@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "58157599061",
+    "firebase_url": "https://assettaging.firebaseio.com",
+    "project_id": "assettaging",
+    "storage_bucket": "assettaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58157599061:android:b4902dd39f141674",
+        "android_client_info": {
+          "package_name": "com.assettagging.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58157599061-m72n0rrsja3lg2rimdfo5avgipoefmu3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.assettagging.test",
+            "certificate_hash": "f3d34b1a318bbb511727f1e945236bb350edbfa6"
+          }
+        },
+        {
+          "client_id": "58157599061-pbg89v8bfpmd1a2ihe540p48v7t74lh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCypee0WElViFYP7OOVlZlbdhUa-_Eqp4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58157599061-pbg89v8bfpmd1a2ihe540p48v7t74lh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

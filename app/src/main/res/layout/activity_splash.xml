@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@mipmap/background"
+    android:gravity="bottom"
+    android:id="@+id/relativeLayoutContainer"
+    tools:context=".view.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/logo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/header_icon"
+        android:layout_margin="10dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_round_progress"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header_icon"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="0"
+        android:progressDrawable="@drawable/cutom_progress_drawable"
+        android:visibility="gone" />
+</RelativeLayout>
