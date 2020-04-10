@@ -26,6 +26,10 @@
             android:id="@+id/tag_update"
             android:icon="@mipmap/tag_update"
             android:title="@string/tagupdate" />
+        <item
+            android:id="@+id/nav_parent_child_asset"
+            android:icon="@drawable/ic_link"
+            android:title="@string/assetLink" />
     </group>
 
 

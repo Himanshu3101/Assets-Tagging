@@ -4,9 +4,7 @@ group='com.github.mreram'
 android {
     compileSdkVersion 26
 
-
-
-    defaultConfig {
+        defaultConfig {
         minSdkVersion 11
         targetSdkVersion 26
         versionCode 2
