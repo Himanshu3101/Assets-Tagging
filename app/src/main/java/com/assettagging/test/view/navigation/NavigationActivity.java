@@ -3,7 +3,6 @@ package com.assettagging.test.view.navigation;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -52,20 +51,16 @@ import com.assettagging.test.view.custom_control.CustomProgress;
 import com.assettagging.test.view.custom_control.CustomToast;
 import com.assettagging.test.view.dashboard.DashBoardFragment;
 import com.assettagging.test.view.login.LoginActivity;
+import com.assettagging.test.view.assetlink.AssetLinkingFragment;
 import com.assettagging.test.view.schedule.ScheduleFragmnet;
-import com.assettagging.test.view.schedule.upcoming.UpcomingFragment;
 import com.assettagging.test.view.schedule_detail.ScheduleDetailActivity;
 import com.assettagging.test.view.tag_update.TagUpdatedFragment;
 import com.github.amlcurran.showcaseview.ShowcaseView;
-import com.github.amlcurran.showcaseview.targets.ActionItemTarget;
-import com.github.amlcurran.showcaseview.targets.Target;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
@@ -89,7 +84,6 @@ import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import smartdevelop.ir.eram.showcaseviewlib.GuideView;
 
 public class NavigationActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -753,6 +747,21 @@ public class NavigationActivity extends BaseActivity
             showFragment(new TagUpdatedFragment(), getString(R.string.tagupdate));
             DashBoardFragment.instance = null;
             ScheduleFragmnet.instance = null;
+            DisposerFragmnet.instance = null;
+            pullToRefresh.setRefreshing(false);
+            pullToRefresh.setEnabled(false);
+            YetToSubmitDisposerFragment.instance = null;
+            ExistingAssetsFragment.instance = null;
+            CompletedAssetsFragment.instance = null;
+            menuitem.setVisible(false);
+            menuitemfilter.setVisible(false);
+            action_LoadMore.setVisible(false);
+        }
+        else if(id== R.id.nav_parent_child_asset){
+            showFragment(new AssetLinkingFragment(), getString(R.string.assetLink));
+            DashBoardFragment.instance = null;
+            ScheduleFragmnet.instance = null;
+            TagUpdatedFragment.instance=null;
             DisposerFragmnet.instance = null;
             pullToRefresh.setRefreshing(false);
             pullToRefresh.setEnabled(false);

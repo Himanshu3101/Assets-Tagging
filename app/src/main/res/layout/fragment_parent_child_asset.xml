@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutParentChildText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutHeaderScannedDetail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewParentChildText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_DarkBlue"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Parent"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutViewAfterScanedDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutParentChildText"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewParentScannedDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/cardview_background_blue"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutParentScanedDetail"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutParentScannedDetailSerialno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailSerialno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/serialno"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailSerialnoID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_toRightOf="@+id/textViewParentScannedDetailSerialno"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/serialno"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutParentScannedDetailDesp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutParentScannedDetailSerialno">
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailDesp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/Des"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailDespID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/textViewParentScannedDetailDesp"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/serialno"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutParentScannedDetailAssetno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailAssetno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/assetno"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailAssetnoID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/textViewParentScannedDetailAssetno"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/serialno"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutParentScannedDetailTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutParentScannedDetailAssetno"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/tag"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textViewParentScannedDetailTagID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_toRightOf="@+id/textViewParentScannedDetailTag"
+                                android:gravity="left"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/serialno"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewChildsScannedDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeaderScannedDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutScanTag"
+        android:visibility="gone">
+
+        <com.chauthai.swipereveallayout.SwipeRevealLayout
+            android:id="@+id/swipeRevealLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dragEdge="right"
+            app:mode="normal">
+
+            <FrameLayout
+                android:id="@+id/frameBackLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewHeaderScannedDetailDelete"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:elevation="5dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_delete" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardViewHeaderScannedDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:foreground="@drawable/cardview_background_blue"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderSerialno."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderSerialno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderSerialnoID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_toRightOf="@+id/textViewHeaderSerialno"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relativeLayoutHeaderSerialno.">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/location"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderLocationID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_toRightOf="@+id/textViewHeaderLocation"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderDescp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relativeLayoutHeaderLocation">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderDescp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/Des"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderDescpID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/textViewHeaderDescp"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_below="@+id/relativeLayoutHeaderDescp">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderTag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/tag"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderTagID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="47dp"
+                                    android:layout_toRightOf="@+id/textViewHeaderTag"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderAssetno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderAssetno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/assetno"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderAssetnoID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:layout_toRightOf="@+id/textViewHeaderAssetno"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderProject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relativeLayoutHeaderAssetno"
+                                android:layout_marginRight="10dp">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderProject"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/project"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderProjectID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="44dp"
+                                    android:layout_toRightOf="@+id/textViewHeaderProject"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutHeaderTechinfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relativeLayoutHeaderProject">
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderTechinfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/techinfo"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/textViewHeaderTechinfoID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/textViewHeaderTechinfo"
+                                    android:gravity="left"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/serialno"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+
+        </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFloatingAddAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingAddAssetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            card_view:srcCompat="@drawable/ic_add_item" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutScanTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editTextScanBarCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pcascanTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background_not_round_blue"
+            android:gravity="left"
+            android:hint="@string/scan_qr_code"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pcascanTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="@string/scanTagSerialno"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

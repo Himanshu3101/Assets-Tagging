@@ -82,6 +82,7 @@
     <string name="filter">Filter</string>
     <string name="createdon">Created On</string>
     <string name="tagupdate">Update Tag</string>
+    <string name="assetLink">Asset Link</string>
     <string name="asset_id">Asset Id</string>
     <string name="asset_name">Asset Name:</string>
     <string name="submit">Submit</string>
@@ -94,6 +95,7 @@
     <string name="existing">Existing</string>
     <string name="clearall">Clear All Filter</string>
     <string name="scanExistingTag">Scan Existing Tag</string>
+    <string name="scanTagSerialno">Scan Tag / Serial No. </string>
     <string name="scanNewTag">Scan New Tag</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="activity_type">Activity Type</string>
@@ -203,5 +205,9 @@
     <string name="if_you_want_to_change_pass_connect_net">Please connect to Internet If you want to change Password.</string>
     <string name="loaddata">Load Data</string>
     <string name="tagrequi">Is Tag Req:</string>
+    <string name="serialno">Serial No.</string>
+    <string name="assetno">Asset No.</string>
+    <string name="location">Location</string>
+    <string name="techinfo">Technical Info.</string>
 
 </resources>
